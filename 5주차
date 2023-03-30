@@ -1,0 +1,100 @@
+# 5주차 C언어 실습
+ 
+ - 5주차 이론 내용 <br>
+   1. if
+   2. 문제 : https://www.acmicpc.net/problem/1330
+
+ - 5주차 실습 내용
+
+```
+#include <stdio.h>
+int main(void)
+{
+    char c;
+    int i;
+    float f;
+
+    c = 10000; //내림변환
+    i = 1.23456 + 10; //내림변환
+    f = 10 + 20; //올림변환
+    
+    printf("c = %d, i = %d, f = %f \n", c, i, f);
+    return 0;
+}
+```
+
+```
+#include <stdio.h>
+int main(void)
+{
+    int number;
+
+   printf("정수를 입력하시오:");
+   scanf("%d", &number);
+
+   if (number > 0 )
+   
+   {
+    printf("양수입니다.");
+   }
+   printf("입력된 값은 %d입니다.", number);
+
+   return 0;
+    
+}
+```
+
+```
+#include <stdio.h>
+
+int main(void)
+{
+    int number;
+
+    printf("정수를 입력하시오:");
+    scanf("%d", &number);
+
+    if (number%2 == 0)
+        printf("입력된 정수는 짝수입니다.\n");
+    else
+        printf("입력된 정수는 홀수입니다.\n");
+
+    return 0;
+}
+```
+
+```
+#include <stdio.h>
+int main(void)
+{
+    char ch;
+    printf("문자를 입력하시오:");
+
+    ch = getchar();
+    if( ch >='A' && ch <= 'Z')
+        printf("%c는 대문자입니다.\n", ch);
+    else if (ch >= 'a' && ch <= 'z')
+        printf("%c는 소문자입니다.\n", ch);
+    else if (ch >= '0' && ch <= '9')
+        printf("%c는 숫자입니다.\n", ch);
+    else
+        printf("%c는 기타문자입니다.\n", ch);
+        
+        return 0;
+
+```
+#include <stdio.h>
+
+int main()
+{
+  int i;
+  char c;
+
+  scanf("%d", &i);
+  scanf("%c", &c);
+
+  printf("입력한 문자 : %c\n", c);
+
+  return 0;
+}
+

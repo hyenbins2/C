@@ -214,3 +214,27 @@ int main(void)
     return 0;
 }
 ```
+
+11. 구구단
+```.c
+#include <stdio.h>
+
+int main(void) {
+
+  int dan = 2;
+
+  do {
+    int count = 1;
+    printf("구구단\n");
+    do {
+      printf("%d * %d = %d\n", dan, count, dan * count);
+      count++;
+    } while (count <= 9);
+
+    printf("/n/n");
+    dan++;
+  } while (dan <= 2);
+
+  return 0;
+}
+```

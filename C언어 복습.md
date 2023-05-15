@@ -255,3 +255,23 @@ int main(void) {
   return 0;
 }
 ```
+12 -1 (for - while 문)
+```.c
+#include <stdio.h>
+
+int main(void) {
+
+  int i = 0, j;
+
+  for (i = 1; i <= 10; i++) {
+    j = 1;
+    while (j <= 30) {
+      j = j + 1;
+      printf("*");
+    }
+
+    printf("\n");
+  }
+  return 0;
+}
+```

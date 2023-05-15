@@ -264,7 +264,7 @@ int main(void) {
   int i = 0, j;
 
   for (i = 1; i <= 10; i++) {
-    j = 1;
+    j = 1; // J를 1로 초기화 해줘야 밑의 while문에서 다시 1부터 *을 찍을 수 
     while (j <= 30) {
       j = j + 1;
       printf("*");

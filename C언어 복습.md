@@ -238,3 +238,20 @@ int main(void) {
   return 0;
 }
 ```
+12. * 30개씩 10줄 찍기
+```.c
+#include <stdio.h>
+
+int main(void) {
+  int i = 0, j = 0;
+
+  for(i = 1; i <= 10; i++) {
+    
+      for(j = 1; j <= 30; j++){
+      printf("*");
+  }
+  printf("\n");
+  }
+  return 0;
+}
+```
